@@ -1,0 +1,4 @@
+username = <your-email-address>
+password = <your-password>
+target = <your-target-email-address ('it may be same as username')>
+url = <product-url-you-wanna-track>
