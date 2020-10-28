@@ -19,8 +19,18 @@ updates are:-
 ### Error mail
 <img width=600 src='https://github.com/rishabhjainfinal/amazon-price-down-tracker/blob/main/README_dependency/error.png' alt='error mail template'>
 
-### update and weekly notification
-<img width=600 src='https://github.com/rishabhjainfinal/amazon-price-down-tracker/blob/main/README_dependency/update.png' alt='update mail template' >
+### update or weekly notification (with graph and price_data.json attached to the email)
+This mail attached with graph of pice change and json file for more info.
+  1. [EXMPLE graph](README_dependency/graph.png)
+  2. [EXMPLE price_data.json](README_dependency/price_data.json)
+
+
+<div style='display:flex;'>
+  <img width=600 src='https://github.com/rishabhjainfinal/amazon-price-down-tracker/blob/main/README_dependency/update.png' alt='update mail template' >
+  <img width=300 src='https://github.com/rishabhjainfinal/amazon-price-down-tracker/blob/main/README_dependency/graph.png' alt='graph representation' >
+</div>
+
+
 
 # Usage
 ```
