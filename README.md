@@ -45,6 +45,8 @@ For running the program on a server use `nohup` before 'python' to run even afte
 
 `nohup python runner.py -f sec.txt`
 
+**[read more about nohub here link to a article ](https://janakiev.com/blog/python-background/)**
+
 ## Arguments
 `python runner.py -h`
 

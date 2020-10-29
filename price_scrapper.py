@@ -26,7 +26,7 @@ def price_scrapper_v0(url):
 			price =	price.split('₹ ')[-1].split('.')[0].replace(',','')	
 			return (True,price)
 		except :
-			print('not working properly')
+			print('unable to extract Cost tring AGAIN....')
 			return (False,'not working properly')
 	else :
 		print(r.status_code)
