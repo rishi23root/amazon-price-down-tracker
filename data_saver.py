@@ -1,5 +1,6 @@
 import json
 import datetime
+import time
 # createing a json file and save the results
 
 class data_saver:
@@ -11,7 +12,7 @@ class data_saver:
 			'min_cost':0,
 			'max_cost':0
 		}
-		self.file_name ='price_data.json' 
+		self.file_name =f'price_data{time.time()}.json' 
 
 	def create_template(self,url,cost):
 		self.template['product_url'] = url

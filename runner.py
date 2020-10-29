@@ -14,7 +14,7 @@ class runner:
 		self.username  = username
 		self.password = password
 		self.target = target
-		self.graph_image = 'graph.png'
+		self.graph_image = f'graph{time.time()}.png'
 		self.date = datetime.datetime.now().strftime('%d/%m/%y')
 
 	def save_line_graph(self,list_of_costs):
@@ -140,7 +140,7 @@ class runner:
 		email_contents['new_cost'] = self.saver.read_data()['costs'][-1]
 		email_contents['higest_cost'] = self.saver.template['max_cost']
 		email_contents['lowest_cost'] = self.saver.template['min_cost']
-		email_sender.cost_updating_weekly(self.username,self.password,self.target,email_contents,attachment=True,filename=[self.graph_image,'price_data.json'])
+		email_sender.cost_updating_weekly(self.username,self.password,self.target,email_contents,attachment=True,filename=[self.graph_image,self.saver.file_name])
 
 	@staticmethod
 	def intro():
@@ -207,7 +207,7 @@ if __name__ == '__main__':
 			raise Exception('There is not enought varible for our requirement\nshould have:-\n1.username\n2.password\n3.target\n4.url')
 
 		# calling the funtion here
-		print(f'\nInitiating the process by {args.file}')
+		# print(f'\nInitiating the process by {args.file}')
 		runner.runner(values['url'],values['username'],values['password'],values['target'])
 
 	elif args.url and args.user and args.password and args.target :

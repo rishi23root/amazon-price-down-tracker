@@ -122,11 +122,11 @@ class email_sender:
 
 	def add_message(self,subject,body):
 		''' take subject and body and add given message to the message package '''
-		print('adding content of the mail here')
 		# subject body 
-		self.message['Subject'] = 'New down prices are here !!'
+		self.message['Subject'] = subject
 		# set content of the body in html format
 		self.message.add_alternative(body,subtype = 'html')
+		print('Email suject and body are attached ')
 
 	def add_attachments(self,filename = None,directory = None):
 		# adding files in here ######### unable to find any docs to attaching py files
@@ -171,7 +171,7 @@ class email_sender:
 						self.add_attachments(directory=kwargs['directory'])   # adding attachments
 
 			smtp.send_message(self.message)  #sending mail
-			print('\n')
+			print('Mail is send\n')
 
 
 	@classmethod
