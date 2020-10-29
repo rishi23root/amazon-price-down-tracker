@@ -40,6 +40,11 @@ cd amazon-price-down-tracker/
 
 ----
 
+# On server 
+For running the program on a server use `nohup` before 'python' to run even after you ssh-out example:- 
+
+`nohup python runner.py -f sec.txt`
+
 ## Arguments
 `python runner.py -h`
 
